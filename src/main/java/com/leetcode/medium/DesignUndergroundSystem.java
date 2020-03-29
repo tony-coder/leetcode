@@ -8,8 +8,8 @@ public class DesignUndergroundSystem {
 }
 
 class UndergroundSystem {
-    Map<Integer,Node1> mp;
-    Map<String,Node2> ans;
+    private Map<Integer,Node1> mp;
+    private Map<String,Node2> ans;
 
     public UndergroundSystem() {
         mp=new HashMap<>();
@@ -39,7 +39,7 @@ class UndergroundSystem {
 class Node1{
     String startStation;
     int t;
-    public Node1(String startStation,int t){
+    Node1(String startStation, int t){
         this.startStation=startStation;
         this.t=t;
     }
@@ -53,7 +53,7 @@ class Node2{
         this.cnt=0;
     }
 
-    public Node2(double sum,int cnt){
+    Node2(double sum, int cnt){
         this.sum=sum;
         this.cnt=cnt;
     }
