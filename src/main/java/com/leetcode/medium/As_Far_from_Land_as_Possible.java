@@ -10,6 +10,9 @@ public class As_Far_from_Land_as_Possible {
     }
 }
 
+/**
+ * BFS深度优先搜索
+ */
 class Solution {
     private int[] dx = {-1, 0, 1, 0};
     private int[] dy = {0, -1, 0, 1};
@@ -18,7 +21,7 @@ class Solution {
         int ans = -1, n = grid.length, m = grid[0].length;
         Queue<node> queue = new ArrayDeque<>();
         boolean[][] vis = new boolean[n][m];
-
+        // 先把所有的陆地都入队
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (grid[i][j] == 1) {
@@ -27,6 +30,7 @@ class Solution {
                 }
             }
         }
+        // 从各个陆地开始，一圈一圈的遍历海洋，最后遍历到的海洋就是离陆地最远的海洋
         while (!queue.isEmpty()) {
             node cur = queue.peek();
             queue.poll();
