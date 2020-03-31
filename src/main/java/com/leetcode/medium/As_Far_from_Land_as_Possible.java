@@ -3,6 +3,11 @@ package com.leetcode.medium;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
+/**
+ * 1162. 地图分析
+ * https://leetcode-cn.com/problems/as-far-from-land-as-possible/
+ */
+
 public class As_Far_from_Land_as_Possible {
     public static int runSolution(int[][] grid) {
         Solution solution = new Solution();
