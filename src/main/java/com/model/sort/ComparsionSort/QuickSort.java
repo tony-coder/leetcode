@@ -4,8 +4,8 @@ import java.util.Random;
 
 /**
  * 快速排序
- * 版本一：基本快速排序
- * 基本快排：把等于切分元素的所有元素分到了数组的同一侧，可能会造成递归树倾斜；
+ * 版本 2：双指针（指针对撞）快速排序
+ * 把等于切分元素的所有元素等概率地分到了数组的两侧，避免了递归树倾斜，递归树相对平衡；
  */
 public class QuickSort {
     /**
@@ -40,13 +40,13 @@ public class QuickSort {
         int pivot = nums[left];
         int i = left, j = right + 1;
         // 循环不变量：
-        // all in [left + 1, lt] < pivot
-        // all in [lt + 1, i) >= pivot
+        // all in [left + 1, i) <= pivot
+        // all in (j, right] >= pivot
         for (; ; ) {
-            while (nums[++i] < pivot) ;
+            while (nums[++i] < pivot && i < right) ;
             while (nums[--j] > pivot) ;
             if (i < j)
-                swap(nums, i, j);
+                swap(nums, i, j);  // 细节：相等的元素通过交换，等概率分到数组的两边
             else
                 break;
         }
