@@ -22,6 +22,6 @@ public class SortTest {
 
         assertArrayEquals(ans2, MergeSort.sort(t2));
         assertArrayEquals(ans2, QuickSort.sort(t2));
-
+        assertArrayEquals(ans2, HeapSort.sort(t2));
     }
 }
