@@ -72,3 +72,33 @@ class Automation {
             sign = c == '+' ? 1 : -1;
     }
 }
+/*
+//模拟
+class Solution {
+    public int myAtoi(String str) {
+        char[] s=str.toCharArray();
+        int pos=0,ans=0,symbol=1;
+        if(s.length==0)
+            return 0;
+        while(pos<s.length && s[pos]==' ')
+            pos++;
+        if(pos>=s.length)
+            return 0;
+        if(s[pos]=='-'){
+            symbol=-1;
+            pos++;
+        }else if(s[pos]=='+'){
+            symbol=1;
+            pos++;
+        }else if(!Character.isDigit(s[pos]))
+            return ans;
+        while(pos<s.length && Character.isDigit(s[pos])){
+            if(ans>(Integer.MAX_VALUE-s[pos]+'0')/10)
+                return symbol==1?Integer.MAX_VALUE:Integer.MIN_VALUE;
+            ans=ans*10+s[pos]-'0';
+            pos++;
+
+        }
+        return ans*symbol;
+    }
+}*/
