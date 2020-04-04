@@ -3,7 +3,10 @@ package com.leetcode.hard;
 import java.util.Stack;
 
 /**
+ * 42. 接雨水
+ * https://leetcode-cn.com/problems/trapping-rain-water/
  *
+ * 单调栈的应用
  */
 public class Trapping_Rain_Water {
     // 单调栈方法
