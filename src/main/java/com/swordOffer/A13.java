@@ -9,8 +9,9 @@ import java.util.Queue;
  * 搜索题 DFS/BFS
  */
 public class A13 {
-    private final static int[] dx = {-1, 0, 1, 0};
-    private final static int[] dy = {0, -1, 0, 1};
+    // 搜索的过程中搜索方向可以缩减为向右和向下，而不必再向上和向左进行搜索
+    private final static int[] dx = {1, 0};
+    private final static int[] dy = {0, 1};
 
     public static int movingCount(int m, int n, int k) {
         int[] start = new int[]{0, 0};
@@ -23,7 +24,7 @@ public class A13 {
             int[] node = q.peek();
             q.poll();
             ans++;
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 2; i++) {
                 int x = node[0] + dx[i];
                 int y = node[1] + dy[i];
                 if (x >= 0 && x < m && y >= 0 && y < n && !vis[x][y] && judge(x, y, k)) {
@@ -50,7 +51,7 @@ public class A13 {
         return tmp <= k;
     }
 
-    // DFS
+    // DFS 这题DFS比BFS快很多
     public static int movingCount2(int m, int n, int k) {
         boolean[][] visit = new boolean[m][n];
         return dfs(0, 0, m, n, k, visit);
@@ -61,7 +62,6 @@ public class A13 {
             return 0;
         }
         visit[i][j] = true;
-        return dfs(i + 1, j, m, n, k, visit) + dfs(i - 1, j, m, n, k, visit) +
-                dfs(i, j + 1, m, n, k, visit) + dfs(i, j - 1, m, n, k, visit) + 1;
+        return dfs(i + 1, j, m, n, k, visit) + dfs(i, j + 1, m, n, k, visit) + 1;
     }
 }
