@@ -1,4 +1,4 @@
-package com.model.sort.ComparsionSort;
+package com.template.sort.ComparsionSort;
 
 /**
  * 归并排序

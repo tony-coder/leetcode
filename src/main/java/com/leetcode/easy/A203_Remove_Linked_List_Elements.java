@@ -1,5 +1,7 @@
 package com.leetcode.easy;
 
+import com.publicClass.ListNode;
+
 // 203. 移除链表元素
 public class A203_Remove_Linked_List_Elements {
     public ListNode removeElements(ListNode head, int val) {
@@ -15,13 +17,4 @@ public class A203_Remove_Linked_List_Elements {
         return front.next;
     }
 
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
 }

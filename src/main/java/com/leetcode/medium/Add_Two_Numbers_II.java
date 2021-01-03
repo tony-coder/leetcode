@@ -1,11 +1,13 @@
 package com.leetcode.medium;
 
+import com.publicClass.ListNode;
+
 import java.util.Stack;
 
 /**
  * 445. 两数相加 II
  * https://leetcode-cn.com/problems/add-two-numbers-ii/
- *
+ * <p>
  * Definition for singly-linked list.
  * public class ListNode {
  * int val;
@@ -94,14 +96,5 @@ public class Add_Two_Numbers_II {
             res = tmp;
         }
         return res;
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
     }
 }

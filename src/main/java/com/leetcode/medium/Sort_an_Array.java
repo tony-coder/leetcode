@@ -1,6 +1,6 @@
 package com.leetcode.medium;
 
-import com.model.sort.ComparsionSort.QuickSort;
+import com.template.sort.ComparsionSort.QuickSort;
 
 /**
  * 912. 排序数组

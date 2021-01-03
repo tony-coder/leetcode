@@ -1,9 +1,9 @@
-package com.model.sort;
+package com.template.sort;
 
-import com.model.sort.ComparsionSort.InsertionSort;
-import com.model.sort.ComparsionSort.MergeSort;
-import com.model.sort.ComparsionSort.QuickSort;
-import com.model.sort.ComparsionSort.SelectionSort;
+import com.template.sort.ComparsionSort.InsertionSort;
+import com.template.sort.ComparsionSort.MergeSort;
+import com.template.sort.ComparsionSort.QuickSort;
+import com.template.sort.ComparsionSort.SelectionSort;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
