@@ -1,12 +1,12 @@
-package com.leetcode.medium;
+package com.leetcode.medium._0016_3Sum_Closest;
 
 import java.util.Arrays;
 
 /**
  * 排序+双指针
  */
-public class A16_3Sum_Closest {
-    public static int threeSumClosest(int[] nums, int target) {
+class Solution {
+    public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
         int ans = nums[0] + nums[1] + nums[2];
         for (int i = 0; i < nums.length; i++) {
