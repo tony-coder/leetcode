@@ -1,6 +1,6 @@
 package com.leetcode.medium;
 
-import com.publicClass.ListNode;
+import com.utils.ListNode;
 
 import java.util.Stack;
 

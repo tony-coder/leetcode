@@ -1,4 +1,4 @@
-package com.publicClass;
+package com.utils;
 
 /**
  * Definition for singly-linked list.

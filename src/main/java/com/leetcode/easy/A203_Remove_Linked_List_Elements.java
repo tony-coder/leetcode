@@ -1,6 +1,6 @@
 package com.leetcode.easy;
 
-import com.publicClass.ListNode;
+import com.utils.ListNode;
 
 // 203. 移除链表元素
 public class A203_Remove_Linked_List_Elements {
