@@ -1,5 +1,8 @@
 package com.leetcode.easy._0509_Fibonacci_Number;
 
+/**
+ * 递归法
+ */
 public class Solution {
     public int fib(int n) {
         if (n == 0)
