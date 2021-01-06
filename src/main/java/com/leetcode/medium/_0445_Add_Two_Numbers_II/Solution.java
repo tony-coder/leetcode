@@ -1,4 +1,4 @@
-package com.leetcode.medium;
+package com.leetcode.medium._0445_Add_Two_Numbers_II;
 
 import com.utils.ListNode;
 
@@ -15,7 +15,8 @@ import java.util.Stack;
  * ListNode(int x) { val = x; }
  * }
  */
-public class Add_Two_Numbers_II {
+
+public class Solution {
     // 用 stack 保存链表，再从 stack 中取出来，就是数字从低位到高位访问了。
     // 逆序处理，似乎一般都会用到栈
     public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
