@@ -1,7 +1,7 @@
-package com.leetcode.hard;
+package com.leetcode.hard._0004_Median_of_Two_Sorted_Arrays;
 
-public class A4_Median_of_Two_Sorted_Arrays {
-    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+public class Solution {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int n = nums1.length;
         int m = nums2.length;
         if (n > m) {  // 保证n<=m
