@@ -1,10 +1,9 @@
-package com.leetcode.medium;
+package com.leetcode.medium._0015_3Sum;
 
+import com.leetcode.medium._0015_3Sum.ThreeSum;
 import org.junit.Test;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class ThreeSumTest {
     @Test

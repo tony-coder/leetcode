@@ -1,4 +1,4 @@
-package com.leetcode.medium;
+package com.leetcode.medium._0015_3Sum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
